@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>registration form</title>
+<script>
+function validateForm() {
+  var name=document.myForm.first_name.value;
+  var email=document.myForm.email.value;
+  var password=document.myForm.password.value;
+  
+  if(name=="") {
+  alert("Name must be filled out");
+  }
+  else if(email==""){
+   alert("email must be filled out");
+ }
+ else if(password==""){
+  alert("password must be filled")
+}
+}
+</script>
+</head>
+<body bgcolor="skyblue">
+<font size="5" color="red" face="arial">
+
+ <h1 align="center"><b>Registration Form</b></h1>
+ <form  name="myForm" action="file:///C:/Users/user/Desktop/web%20programing/welcom.html" onsubmit="return validateForm()" method="post" align="center">
+   <table align="center">
+    <tr>
+       <td>
+         First Name
+       </td>
+        <td>: </td>
+       <td>
+         <input type="text"name="first_name"/><br>
+       </td>
+    </tr>
+   
+  
+     
+     <tr>
+        <td>
+          Email         
+        </td>
+         <td>:</td>
+        <td>
+           <input type="email"name="email"/><br>
+         </td>
+      </tr>
+        <tr>
+       <td>    
+          Password 
+       </td>
+        <td>:</td>  
+       <td>
+         <input type="password"id="password"/><br>
+       </td>
+     </tr>
+         
+      <tr>
+          <td>
+             Mobile No 
+           </td>
+             <td>:</td>
+           <td>
+              <input type="number"name="mobile_no"/><br>
+           </td></tr>   
+           <tr>
+            <td>permenent address</td>
+                  <td>:</td>
+           
+              <td>
+         <input type="text"name="address"/><br>
+           </td>
+            </tr>
+           
+            <tr>
+             <td>
+              sex</td>
+             <td>:</td>
+             <td><input type="radio" name="sex"value="male">male
+             <input type="radio" name="sex"value="female"female>female
+             </td>
+              </tr>
+          
+
+
+             <tr>
+              <td>
+                 City         
+               </td>
+                 <td>
+                 :
+                   </td> 
+                <td>
+                   <select name="city"><br>
+                   <option value="kozhikode">kozhikode</option>
+                   <option value="kozhikode">kannur</option>
+                   <option value="kozhikode">kasarkode</option>
+                   <option value="kozhikode">kochi</option><br>
+                   </select><br>
+                </td>
+              </tr>
+              <tr>
+               <td></td>
+                <td><input type="submit" value="submit"></td>
+           </table>
+         
+        <a href="file:///C:/Users/user/Desktop/web%20programing/registration%20form%20validate%20form%20using%20javascript.html">back to home</a>
+</form>
+</font>
+
+</body>
+</html>
